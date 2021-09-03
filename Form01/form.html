@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script language="jscript" src="./js/lib.js">
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/design.css">
+
+</head>
+<body>
+    <form>
+        Nome: <input type="text" id = nome> <br><br>
+        Data Nasc: <input type="text" id = nasc > <br><br>
+        Cep: <input type="text" id = cep> <br><br>
+        
+        Sexo: <input type="radio" name="sexo"value="Feminino"/>Feminino
+              <input type="radio" name="sexo"value="Masculino"/>Masculino <br><br>  
+        
+        Tel: <input type="text" id = tel><br><br>
+        Email: <input type="text" id = email> <br><br>
+        Estado Civil: <select name="civil" id="civil">
+            <option value="casado">Casado</option>
+            <option value="solteiro">Solteiro</option>
+            <option value="viuvo">Viuvo</option>
+            <option value="divorciado">Divorciado</option>
+          </select>
+          <br><br>
+        <input type="button" id=salvar value=salvar onclick="save()">
+        <input type="button" id=salvar value=insere onclick="insereLinhaTabela()">
+    </form>
+    
+            <table style=width:50% border="1" id="minhaTabela">
+                <thead>
+                <tr>
+                <th>Nome</th>        
+                <th>Data Nasc</th> 
+                <th>Cep</th> 
+                <th>Sexo</th>
+                <th>Tel</th>
+                <th>Email</th>
+                <th>Estado Civil</th> 
+                </tr>
+            </thead>
+            </table>
+            
+    <div id="mostra"> 
+        
+    </div>
+
+</body>
+</html>
+<script src="./js/lib.js?v=1">
+</script>
